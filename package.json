@@ -1,0 +1,22 @@
+{
+  "name": "website-borderland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "google:clean": "gsutil -m rm -r gs://borderlands.acarrillo.info/*",
+    "google:upload": "gsutil -m cp -r ./* gs://borderlands.acarrillo.info",
+    "deploy": "npm run google:clean && npm run google:upload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garciadiazjaime/website-borderland.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garciadiazjaime/website-borderland/issues"
+  },
+  "homepage": "https://github.com/garciadiazjaime/website-borderland#readme"
+}
